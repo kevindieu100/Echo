@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.echo.echo.RequestProfileActivity"
+    android:background="@color/Gray_Background">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_request_profile" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/phone_linkbutton"
+                    android:background="@drawable/phone"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@+id/resume_linkbutton"
+                    android:layout_toEndOf="@+id/send_button"
+                    android:layout_marginBottom="36dp" />
+
+                <Button
+                    android:id="@+id/gmail_linkbutton"
+                    android:background="@drawable/email"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/send_button"
+                    android:layout_toStartOf="@+id/send_button" />
+
+                <Button
+                    android:id="@+id/twitter_linkbutton"
+                    android:background="@drawable/twitter"
+                    android:textColor="#f8fdf9"
+                    android:minWidth="48dip"
+                    android:minHeight="49dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_alignTop="@+id/facebook_linkbutton"
+                    android:layout_toEndOf="@+id/send_button" />
+
+                <Button
+                    android:id="@+id/facebook_linkbutton"
+                    android:layout_height="60dp"
+                    android:background="@drawable/round_shape_facebook"
+                    android:textColor="#f8fdf9"
+                    android:minWidth="48dip"
+                    android:minHeight="49dp"
+                    android:layout_width="60dp"
+
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_below="@+id/ins_linkbutton"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:id="@+id/snap_linkbutton"
+                    android:background="@drawable/snapchat"
+                    android:textColor="#f8fdf9"
+                    android:minWidth="48dip"
+                    android:minHeight="49dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/send_button"
+                    android:layout_toEndOf="@+id/send_button" />
+
+                <Button
+                    android:id="@+id/ins_linkbutton"
+                    android:background="@drawable/instagram"
+                    android:textColor="#f8fdf9"
+                    android:minWidth="48dip"
+                    android:minHeight="49dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/send_button"
+                    android:layout_toStartOf="@+id/send_button" />
+
+                <Button
+                    android:id="@+id/linkin_linkbutton"
+                    android:background="@drawable/linkedin"
+                    android:textColor="#f8fdf9"
+                    android:minWidth="48dip"
+                    android:minHeight="49dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_alignBottom="@+id/snap_linkbutton"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/resume_linkbutton"
+                    android:background="@drawable/resume"
+                    android:layout_marginBottom="185dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/linkin_linkbutton" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/send_button"
+                    android:background="@drawable/logo_med"
+                    android:visibility="visible"
+                    android:layout_above="@+id/phone_linkbutton"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:text="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/requestName"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHighlight="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColorLink="?attr/colorPrimary"
+                    android:textSize="24sp"
+                    android:layout_above="@+id/linkin_linkbutton"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:paddingTop="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Confirm Connection?"
+                    android:ems="10"
+                    android:id="@+id/confirmText"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHighlight="@android:color/background_light" />
+
+                <Button
+                    android:text="Echo Me"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirmButton"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:width="100dp"
+                    android:autoText="false" />
+                <Button
+                    android:text="No Thanks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rejectButton" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

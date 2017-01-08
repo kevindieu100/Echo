@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('pulsator4droid-1.0.3.aar'))

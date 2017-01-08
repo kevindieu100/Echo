@@ -1,0 +1,10 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/facebook" />
+    <item>
+        <shape android:shape="oval">
+            <size android:width="10dp"
+                android:height="10dp"/>
+            <solid android:color="#59d5fe"/>
+        </shape>
+    </item>
+</selector>

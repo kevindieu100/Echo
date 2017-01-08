@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.echo.echo.MyProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Gray_Background">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutOne"
+                android:layout_marginEnd="18dp"
+                android:layout_alignTop="@+id/layoutTwo"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/linkedin"
+                    android:id="@+id/linkedin_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="LinkedIn..."
+                    android:ems="10"
+                    android:id="@+id/linkin_edittext"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/email"
+                    android:id="@+id/email_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Email..."
+                    android:ems="10"
+                    android:id="@+id/email_edittext"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/phone"
+                    android:id="@+id/phone_image"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/phone_edittext"
+                    android:hint="(123)-456-7890..."
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/resume"
+                    android:id="@+id/resume_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/resume_edittext"
+                    android:hint="Resume..."
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_marginBottom="50dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutTwo"
+                android:layout_marginTop="17dp"
+                android:layout_width="160dp"
+                android:layout_below="@+id/edit_button"
+                android:layout_toStartOf="@+id/layoutOne"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/facebook"
+                    android:id="@+id/facebook_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Facebook..."
+                    android:ems="10"
+                    android:id="@+id/facebook_edittext"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/snapchat"
+                    android:id="@+id/snapchat_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Snapchat..."
+                    android:ems="10"
+                    android:id="@+id/snap_edittext"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/instagram"
+                    android:id="@+id/insta_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Instagram.."
+                    android:ems="10"
+                    android:id="@+id/ins_edittext"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/twitter"
+                    android:id="@+id/twitter_image"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Twitter.."
+                    android:ems="10"
+                    android:id="@+id/twitter_edittext"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:src="@drawable/default_pic"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginTop="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Username..."
+                android:ems="10"
+                android:id="@+id/username_TextView"
+                android:layout_marginTop="14dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textAllCaps="true"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <Button
+                android:text="save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_button"
+                android:layout_below="@+id/username_TextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp" />
+
+            <Button
+                android:text="Edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_button"
+                style="@android:style/Widget.Material.Button"
+                android:layout_alignBaseline="@+id/save_button"
+                android:layout_alignBottom="@+id/save_button"
+                android:layout_alignStart="@+id/save_button"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="?android:attr/homeAsUpIndicator"
+                android:id="@+id/back_button"
+                app:backgroundTint="@android:color/darker_gray"
+                android:layout_alignTop="@+id/profile_image"
+                android:layout_alignStart="@+id/layoutTwo" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/content_my_profile" />
+
+
+</android.support.design.widget.CoordinatorLayout>

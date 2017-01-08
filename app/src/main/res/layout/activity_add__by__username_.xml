@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add__by__username_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.echo.echo.Add_By_Username_Activity"
+    android:background="@color/Gray_Background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addUserByNameButton"
+        android:layout_marginTop="47dp"
+        android:id="@+id/addByUserNameWarningLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="22sp"
+        android:textAlignment="center" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/floatingActionButton"
+        app:backgroundTint="@android:color/background_light" />
+
+    <TextView
+        android:text="Please enter the username of the person you would like to add."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addUserByNameInfoText"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/floatingActionButton"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username..."
+        android:ems="10"
+        android:id="@+id/addUserByNameTextField"
+        android:layout_below="@+id/addUserByNameInfoText"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="?attr/colorPrimary"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/resume_linkbutton"
+        android:background="@drawable/resume"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/linkin_linkbutton"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:id="@+id/phone_linkbutton"
+        android:background="@drawable/phone"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/resume_linkbutton"
+        android:layout_toEndOf="@+id/send_button"
+        android:layout_marginBottom="36dp" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/send_button"
+        android:background="@drawable/add"
+        android:visibility="visible"
+        android:layout_above="@+id/phone_linkbutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/gmail_linkbutton"
+        android:background="@drawable/email"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/send_button"
+        android:layout_toStartOf="@+id/send_button" />
+
+    <Button
+        android:id="@+id/twitter_linkbutton"
+        android:background="@drawable/twitter"
+        android:textColor="#f8fdf9"
+        android:minWidth="48dip"
+        android:minHeight="49dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="27dp"
+        android:layout_alignTop="@+id/facebook_linkbutton"
+        android:layout_toEndOf="@+id/send_button" />
+
+    <Button
+        android:id="@+id/linkin_linkbutton"
+        android:background="@drawable/linkedin"
+        android:textColor="#f8fdf9"
+        android:minWidth="48dip"
+        android:minHeight="49dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addUserByNameTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/facebook_linkbutton"
+        android:layout_height="60dp"
+        android:background="@drawable/round_shape_facebook"
+        android:textColor="#f8fdf9"
+        android:minWidth="48dip"
+        android:minHeight="49dp"
+        android:layout_width="60dp"
+
+        android:gravity="center_horizontal"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginStart="21dp"
+        android:layout_below="@+id/ins_linkbutton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/snap_linkbutton"
+        android:background="@drawable/snapchat"
+        android:textColor="#f8fdf9"
+        android:minWidth="48dip"
+        android:minHeight="49dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/send_button"
+        android:layout_toEndOf="@+id/send_button" />
+
+    <Button
+        android:id="@+id/ins_linkbutton"
+        android:background="@drawable/instagram"
+        android:textColor="#f8fdf9"
+        android:minWidth="48dip"
+        android:minHeight="49dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/send_button"
+        android:layout_toStartOf="@+id/send_button" />
+</RelativeLayout>

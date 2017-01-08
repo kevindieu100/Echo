@@ -1,0 +1,30 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addConnection_Button"
+            android:title="Echo" />
+        <item
+            android:id="@+id/profile_Button"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/MyConnection_Button"
+            android:title="Manage Connections" />
+        <item
+            android:title="Add User by Name"
+            android:id="@+id/Request_Button" />
+        <item
+            android:id="@+id/sendText_Button"
+            android:title="Send Text" />
+        <item
+            android:id="@+id/ViewRequest_Button"
+            android:title="View Requests" />
+        <item
+            android:id="@+id/logout_Button"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>
+
